@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mdd-on-mac"
+version = "0.1.0"
+description = ""
+authors = ["ChihYu Yeh <chihyu.jimmy.yeh@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mdd_on_mac"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dlt = {extras = ["duckdb"], version = "^0.3.7"}
+vulcan-sql = "^0.8.0"
+requests = "^2.31.0"
+pandas = "^2.0.3"
+streamlit = "^1.25.0"
+watchdog = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
