@@ -62,7 +62,9 @@ async function db_conn_stream() {
 db.close()
 
 /**
- * db.all: 82.015ms
- * db_conn.all: 155.695ms
- * db_conn.stream: 229.691ms
+    db.all: 877.395ms
+    db.arrowIPCAll: 928.357ms
+    db_conn.all: 1.663s
+    db_conn.arrowIPCAll: 1.707s
+    db_conn.stream: 2.428s
  */
